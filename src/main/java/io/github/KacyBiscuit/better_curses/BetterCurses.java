@@ -5,9 +5,6 @@ import com.mojang.brigadier.context.CommandContext;
 import com.mojang.brigadier.exceptions.CommandSyntaxException;
 import io.github.KacyBiscuit.better_curses.Enchantments.BetterCursesEnchantments;
 import net.minecraft.command.CommandBuildContext;
-import net.minecraft.command.CommandSource;
-import net.minecraft.enchantment.Enchantments;
-import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;
 import net.minecraft.text.Text;
@@ -18,10 +15,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 public class BetterCurses implements ModInitializer {
-	// This logger is used to write text to the console and the log file.
-	// It is considered best practice to use your mod name as the logger's name.
-	// That way, it's clear which mod wrote info, warnings, and errors.
-	public static final Logger LOGGER = LoggerFactory.getLogger("Example Mod");
+	public static final Logger LOGGER = LoggerFactory.getLogger("Better Curses");
 
 	@Override
 	public void onInitialize(ModContainer mod) {

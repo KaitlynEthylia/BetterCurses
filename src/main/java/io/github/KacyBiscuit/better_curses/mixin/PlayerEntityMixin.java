@@ -21,7 +21,9 @@ public abstract class PlayerEntityMixin extends LivingEntity{
 		super(entityType, world);
 	}
 
-	@Inject(method = "getLuck()F", at = @At("HEAD"), cancellable = true)
+	@Inject(method = "getLuck()F",
+			at = @At("HEAD"),
+			cancellable = true)
 	public void getLuck(CallbackInfoReturnable<Float> cir)
 	{
 		float subtractor = 0F;
